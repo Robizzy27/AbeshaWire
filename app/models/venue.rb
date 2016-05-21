@@ -19,4 +19,5 @@
 #
 
 class Venue < ActiveRecord::Base
+  attachment :image
 end

@@ -2,14 +2,16 @@
 <p>
   This are the venues
 </p>
-<% @venues.each do |venue| %>
-  <div class="venue">
-    <%= venue.name %>
-    <%= venue.address %>
-    <%= venue.city %>
-    <%= venue.state %>
-    <%= venue.zip %>
-    <%= venue.description %>
-    <hr>
-  </div>
-<% end %>
+<div class="row">
+  <% @venues.each do |venue| %>
+    <div class="col-lg-3 col-sm-6 col-md-4">
+      <div class="venue">
+        <h1><%= venue.name %></h1>
+        <p><%= venue.address %></p>
+        <p><%= venue.city %>, <%= venue.state %>
+        <%= venue.zip %><p>
+        <p><%= venue.description %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
