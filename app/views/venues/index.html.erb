@@ -1,0 +1,15 @@
+<h1>Venues</h1>
+<p>
+  This are the venues
+</p>
+<% @venues.each do |venue| %>
+  <div class="venue">
+    <%= venue.name %>
+    <%= venue.address %>
+    <%= venue.city %>
+    <%= venue.state %>
+    <%= venue.zip %>
+    <%= venue.description %>
+    <hr>
+  </div>
+<% end %>
